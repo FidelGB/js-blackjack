@@ -71,13 +71,29 @@
         } while ((puntosComputadora < puntosMinimos) && puntosMinimos <= 21);
         setTimeout(() => {
             if(puntosComputadora === puntosMinimos){
-                alert("Hay un empate");
+                Swal.fire({    
+                    title: "Empate",
+                    text: "Nadie ha ganado",
+                    icon: "info"
+                });
             }else if(puntosMinimos > 21){
-                alert("Computadora ha ganado :(")
+                Swal.fire({    
+                    title: "Haz perdido",
+                    text: "La computadora ha ganado",
+                    icon: "error"
+                });
             }else if (puntosComputadora > 21){
-                alert("Haz ganado!!!");
+                Swal.fire({    
+                    title: "¡¡¡Felicidades!!!",
+                    text: "Haz ganado!",
+                    icon: "success"
+                });
             }else{
-                alert("Computadora ha ganado :(")
+                Swal.fire({    
+                    title: "Haz perdido",
+                    text: "La computadora ha ganado",
+                    icon: "error"
+                });
             }
         }, 100)
     }
@@ -107,7 +123,11 @@
             turnoComputadora(puntosJugador)
             
         }else if(puntosJugador === 21){
-            alert("Haz ganado!!!")
+            Swal.fire({    
+                title: "¡¡¡Felicidades!!!",
+                text: "Haz ganado!",
+                icon: "success"
+            });
             btnPedir.disabled = btnDetener.disabled= true;
         }
     });
