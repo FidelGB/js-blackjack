@@ -1,0 +1,22 @@
+{
+  "name": "js-blackjack",
+  "version": "1.0.0",
+  "description": "Proyecto blackjack realizado desde el curso de udemy de \"JavaScript Moderno: Guía para dominar el lenguaje\" de Fernando Herrera (https://www.udemy.com/course/javascript-fernando-herrera)",
+  "main": "index.htm",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FidelGB/js-blackjack.git"
+  },
+  "author": "Fidel GB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FidelGB/js-blackjack/issues"
+  },
+  "homepage": "https://github.com/FidelGB/js-blackjack#readme",
+  "dependencies": {
+    "underscore": "^1.13.1"
+  }
+}
