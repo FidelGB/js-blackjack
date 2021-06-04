@@ -1,4 +1,4 @@
-(() => {
+const modulo = (() => {
     /**
      * 2C: Two of Clubs (Treboles)
      * 2D: Two of Diamonds (Diamantes)
@@ -149,6 +149,7 @@
         nuevoJuego();
     })
 
-        btnPedir.disabled = btnDetener.disabled = false;
-    })
+    return {
+        nuevoJuego: nuevoJuego
+    };
 })()
