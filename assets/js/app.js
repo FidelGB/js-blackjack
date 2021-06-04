@@ -146,12 +146,8 @@
     })
     
     btnNuevo.addEventListener("click", () => {
-        puntosComputadora = 0;
-        puntosJugador = 0;
-        divCartasJugador.innerHTML = "";
-        divCartasComputadora.innerHTML = "";
-        puntJugador.innerHTML = 0;
-        puntComputadora.innerHTML = 0;
+        nuevoJuego();
+    })
 
         btnPedir.disabled = btnDetener.disabled = false;
     })
