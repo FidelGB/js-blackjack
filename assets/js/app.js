@@ -105,9 +105,17 @@
         (jugador ? divCartasJugador : divCartasComputadora).append(imgCarta)
     }
     
-    crearDeck();
-    const carta = pedirCarta();
-    const valor = valorCarta(carta);
+    const nuevoJuego = () => {
+        crearDeck();
+        puntosComputadora = 0;
+        puntosJugador = 0;
+        divCartasJugador.innerHTML = "";
+        divCartasComputadora.innerHTML = "";
+        puntJugador.innerHTML = 0;
+        puntComputadora.innerHTML = 0;
+
+        btnPedir.disabled = btnDetener.disabled = false;
+    }
 
     // Eventos
     btnPedir.addEventListener('click', () => {
